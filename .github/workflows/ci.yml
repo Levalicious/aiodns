@@ -31,7 +31,7 @@ jobs:
     - name: Install wheel
       run: pip install setuptools wheel
     - name: Build package
-      run: python setup.py install
+      run: pip install .
     - name: Run tests
       run: python tests.py
     - name: Run mypy tests
