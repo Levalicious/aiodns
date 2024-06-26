@@ -3,7 +3,8 @@ requires = ["setuptools @ git+https://github.com/pypa/setuptools.git@main", "whe
 build-backend = "setuptools.build_meta"
 
 [project]
-version = "0.0.0" 
+name = "aiodns"
+version = "3.2.0"
 description = "Simple DNS resolver for asyncio"
 readme = "README.rst"
 authors = [{name = "Saúl Ibarra Corretgé", email = "s@saghul.net"}]
@@ -31,4 +32,4 @@ homepage = "https://github.com/saghul/aiodns"
 
 [tool.setuptools]
 packages = ["aiodns"]
-package-data = {"aiodns": ["py.typed"]}
+package-data = { aiodns = ["py.typed"] }
